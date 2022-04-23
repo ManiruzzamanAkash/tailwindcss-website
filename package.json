@@ -1,5 +1,5 @@
 {
-  "name": "tailwind-project",
+  "name": "project-tailwind",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,11 +11,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.0",
-    "@tailwindcss/typography": "^0.5.2",
-    "autoprefixer": "^10.4.4",
-    "postcss-import": "^14.1.0",
-    "postcss-nesting": "^10.1.4",
     "tailwindcss": "^3.0.24"
   }
 }
