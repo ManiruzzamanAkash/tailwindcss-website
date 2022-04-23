@@ -5,24 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevsHunt</title>
+    <title>DevHunt | An online learning platform</title>
 
-    <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,900;1,100;1,200&display=swap"
-        rel="stylesheet">
-
-    <!-- Font awesome -->
+    <!-- Font Awesome icons -->
     <link rel="stylesheet" href="./css/font-awesome/css/all.min.css">
 
-    <!-- Slick CSS -->
-    <link rel="stylesheet" href="./vendors/slick/slick-theme.css">
+    <!-- Slick Carousel CSS -->
     <link rel="stylesheet" href="./vendors/slick/slick.css">
+    <link rel="stylesheet" href="./vendors/slick/slick-theme.css">
 
-    <!-- Main CSS -->
+    <!-- Style -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body class="font-poppins text-gray-800">
@@ -32,7 +30,7 @@
             <div class="flex justify-between">
                 <div class="flex justify-center items-center">
                     <div>
-                        <a href="./index.html">
+                        <a href="index.html">
                             <img src="./images/logo.png" alt="" class="w-36">
                         </a>
                     </div>
@@ -40,47 +38,48 @@
                         <img src="./images/icons/category-icon.svg" alt="" class="w-8 h-8 cursor-pointer">
                     </div>
                     <div class="ml-16 relative">
-                        <span class="absolute top-3 left-4">
-                            <i class="fa fa-search text-slate-300"></i>
+                        <span class="absolute top-2.5 left-4">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
-                        <input type="text"
-                            class="transition w-full rounded-md p-3 pl-12 bg-slate-100 outline-none focus:outline-1 focus:outline-red-300"
-                            placeholder="Search for tuts videos, tutors, tests and more...">
+                        <input type="search"
+                            class="transition w-full text-xs rounded-md p-3 pl-12 bg-slate-100 outline-none outline-1 focus:outline-red-300"
+                            placeholder="Search for Tuts, Videos, Tutors etc..">
                     </div>
                 </div>
                 <div class="flex justify-center items-center">
                     <ul class="list-none">
-                        <li class="inline-block relative mx-6 group">
-                            <span
-                                class="absolute -top-2 -right-3.5 bg-red-500 text-white pl-1.5 text-sm rounded-full h-5 w-5">
-                                2
-                            </span>
-                            <a href="#cart" class="text-xl text-gray-500 group-hover:opacity-75">
-                                <i class="fa-solid fa-cart-arrow-down "></i>
+                        <li class="inline-block mx-6 relative group">
+                            <a href="#" class="text-xl text-gray-500 group-hover:opacity-75">
+                                <span
+                                    class="absolute -top-2 bg-red-500 -right-3.5 text-white pl-1.5 text-sm rounded-full h-5 w-5">
+                                    2
+                                </span>
+                                <i class="fa-solid fa-cart-arrow-down"></i>
                             </a>
                         </li>
-                        <li class="inline-block relative mx-6 group">
-                            <span
-                                class="absolute -top-2 -right-3.5 bg-red-500 text-white pl-1.5 text-sm rounded-full h-5 w-5">
-                                2
-                            </span>
-                            <a href="#cart">
-                                <i class="fa-solid fa-envelope text-xl text-gray-500 group-hover:opacity-75"></i>
+                        <li class="inline-block mx-6 relative group">
+                            <a href="#" class="text-xl text-gray-500 group-hover:opacity-75">
+                                <span
+                                    class="absolute -top-2 bg-red-500 -right-3.5 text-white pl-1.5 text-sm rounded-full h-5 w-5">
+                                    2
+                                </span>
+                                <i class="fa-solid fa-envelope"></i>
                             </a>
                         </li>
-                        <li class="inline-block relative mx-6 group">
-                            <span
-                                class="absolute -top-2 -right-3.5 bg-red-500 text-white pl-1.5 text-sm rounded-full h-5 w-5">
-                                2
-                            </span>
-                            <a href="#cart">
-                                <i class="fa-solid fa-bell text-xl text-gray-500 group-hover:opacity-75"></i>
+                        <li class="inline-block mx-6 relative group">
+                            <a href="#" class="text-xl text-gray-500 group-hover:opacity-75">
+                                <span
+                                    class="absolute -top-2 bg-red-500 -right-3.5 text-white pl-1.5 text-sm rounded-full h-5 w-5">
+                                    2
+                                </span>
+                                <i class="fa-solid fa-bell"></i>
                             </a>
                         </li>
                     </ul>
                     <div class="-mt-3 mx-3 group">
-                        <a href="#dashboard" class="bg-white p-2 shadow-md rounded-full h-5 w-5">
-                            <i class="fa-solid fa-user text-xl text-gray-500 bg-white group-hover:opacity-75"></i>
+                        <a href="#"
+                            class="text-xl text-gray-500 group-hover:opacity-75 rounded-full h-5 w-5 shadow py-1.5 px-2.5">
+                            <i class="fa-solid fa-user"></i>
                         </a>
                     </div>
                 </div>
@@ -89,36 +88,35 @@
     </nav>
     <!-- End Navbar -->
 
-    <!-- Start Header / Hero section -->
-    <header class="bg-[#DEF6FD] m-2 rounded-md">
-        <div class="container mx-auto bg-hero bg-contain py-40 bg-no-repeat bg-[right_0px_top_10px]">
-
-            <h2 class="font-thin text-4xl">
+    <!-- Start Header / Hero Section -->
+    <header class="bg-[#DEF6FD] mt-2 rounded-md">
+        <div class="container mx-auto py-40 bg-hero bg-contain bg-no-repeat bg-[right_0px_top_10px]">
+            <h2 class="text-4xl mb-1">
                 Find a perfect
             </h2>
-            <h2 class="font-medium text-4xl">
+            <h2 class="font-semibold text-4xl">
                 Online Course
             </h2>
-            <p class="text-gray-500 mt-3">
+            <p class="text-gray-500 my-3">
                 For only course, you need to learn Web Development
             </p>
 
-            <form class="mt-5" action="" method="get">
-                <div class="flex w-full bg-white items-center p-4">
+            <form action="" method="get" class="mt-4">
+                <div class="flex bg-white items-center p-4">
                     <div class="basis-3/6 relative">
                         <span class="absolute top-0.5 left-4">
-                            <i class="fa fa-search text-slate-300"></i>
+                            <i class="fa-solid fa-search text-slate-300"></i>
                         </span>
                         <input type="search" class="ml-16 outline-none focus:outline-none font-thin"
-                            placeholder="Search online courses...">
+                            placeholder="Search online courses">
                     </div>
-                    <div class="basis-2/6 flex px-2">
+                    <div class="basis-2/6 flex">
                         <div>
-                            <i class="fa fa-cube flex-none text-gray-400 mr-2"></i>
+                            <i class="fa-solid fa-cube text-gray-400 mr-2"></i>
                         </div>
                         <div class="flex-1">
-                            <select name="" id="" class="bg-white text-gray-400 font-thin w-full">
-                                <option value="">Select Technology...</option>
+                            <select name="category" id="category_id" class="bg-white text-gray-400 font-thin w-full">
+                                <option value="">Select Technology</option>
                                 <option value="">Bootstrap</option>
                             </select>
                         </div>
@@ -133,83 +131,135 @@
             </form>
 
             <p class="mt-6 text-gray-600">
-                <strong class="font-medium">Popular Search: </strong>
-                <span class="text-gray-400">Designer, Developer, PHP</span>
+                <strong>Popular Search: </strong>
+                <span class="text-gray-400">
+                    Designer, Developer, PHP
+                </span>
             </p>
         </div>
     </header>
-    <!-- End Header -->
+    <!-- End Header / Hero Section -->
 
     <!-- Start Categories Section -->
     <section id="categories" class="mt-12">
         <div class="container mx-auto">
             <h2 class="font-medium my-5">Browse Categories</h2>
+
             <div class="flex flex-row gap-2 items-center text-center">
                 <div
-                    class="transition basis-[12.5%] bg-[#FCF1EB] mr-3 p-5 rounded cursor-pointer hover:opacity-75 group">
-                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-100">
+                    class="transition basis-[12.5%] bg-[#FCF1EB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
                         <img src="./images/icons/bootstrap.png" alt="" class="w-16 h-16">
                     </div>
-                    <h4 class="mt-4 mb-2 font-medium">Bootstrap</h4>
-                    <p class="text-gray-500 text-xs">32 Courses</p>
-                </div>
+                    <h4 class="mt-4 mb-2 font-medium">
+                        Bootstrap
+                    </h4>
+                    <p class="text-gray-500 text-xs">
+                        32 Courses
+                    </p>
+                </div> <!-- End Single Category Item -->
+
                 <div
-                    class="transition basis-[12.5%] bg-[#FEF9EC] mx-3 p-5 rounded cursor-pointer hover:opacity-75 group">
-                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-100">
+                    class="transition basis-[12.5%] bg-[#FEF9EC] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
                         <img src="./images/icons/html.png" alt="" class="w-16 h-16">
                     </div>
-                    <h4 class="mt-4 mb-2 font-medium">HTML</h4>
-                    <p class="text-gray-500 text-xs">32 Courses</p>
-                </div>
+                    <h4 class="mt-4 mb-2 font-medium">
+                        HTML
+                    </h4>
+                    <p class="text-gray-500 text-xs">
+                        30 Courses
+                    </p>
+                </div> <!-- End Single Category Item -->
+
                 <div
-                    class="transition basis-[12.5%] bg-[#E4F4FB] mx-3 p-5 rounded cursor-pointer hover:opacity-75 group">
-                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-100">
+                    class="transition basis-[12.5%] bg-[#E4F4FB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
                         <img src="./images/icons/jquery.png" alt="" class="w-16 h-16">
                     </div>
-                    <h4 class="mt-4 mb-2 font-medium">JQuery</h4>
-                    <p class="text-gray-500 text-xs">32 Courses</p>
-                </div>
+                    <h4 class="mt-4 mb-2 font-medium">
+                        JQuery
+                    </h4>
+                    <p class="text-gray-500 text-xs">
+                        32 Courses
+                    </p>
+                </div> <!-- End Single Category Item -->
+
                 <div
-                    class="transition basis-[12.5%] bg-[#E4F4FB] mx-3 p-5 rounded cursor-pointer hover:opacity-75 group">
-                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-100">
+                    class="transition basis-[12.5%] bg-[#E4F4FB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
                         <img src="./images/icons/sass.png" alt="" class="w-16 h-16">
                     </div>
-                    <h4 class="mt-4 mb-2 font-medium">Sass</h4>
-                    <p class="text-gray-500 text-xs">32 Courses</p>
-                </div>
+                    <h4 class="mt-4 mb-2 font-medium">
+                        Sass
+                    </h4>
+                    <p class="text-gray-500 text-xs">
+                        32 Courses
+                    </p>
+                </div> <!-- End Single Category Item -->
+
                 <div
-                    class="transition basis-[12.5%] bg-[#E4F4FB] mx-3 p-5 rounded cursor-pointer hover:opacity-75 group">
-                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-100">
+                    class="transition basis-[12.5%] bg-[#FCF1EB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
+                        <img src="./images/icons/react.png" alt="" class="w-16 h-16">
+                    </div>
+                    <h4 class="mt-4 mb-2 font-medium">
+                        React
+                    </h4>
+                    <p class="text-gray-500 text-xs">
+                        32 Courses
+                    </p>
+                </div> <!-- End Single Category Item -->
+
+                <div
+                    class="transition basis-[12.5%] bg-[#FEF9EC] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
                         <img src="./images/icons/java.png" alt="" class="w-16 h-16">
                     </div>
-                    <h4 class="mt-4 mb-2 font-medium">Java</h4>
-                    <p class="text-gray-500 text-xs">32 Courses</p>
-                </div>
+                    <h4 class="mt-4 mb-2 font-medium">
+                        Java
+                    </h4>
+                    <p class="text-gray-500 text-xs">
+                        32 Courses
+                    </p>
+                </div> <!-- End Single Category Item -->
+
                 <div
-                    class="transition basis-[12.5%] bg-[#E4F4FB] mx-3 p-5 rounded cursor-pointer hover:opacity-75 group">
-                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-100">
+                    class="transition basis-[12.5%] bg-[#E4F4FB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
                         <img src="./images/icons/python.png" alt="" class="w-16 h-16">
                     </div>
-                    <h4 class="mt-4 mb-2 font-medium">Python</h4>
-                    <p class="text-gray-500 text-xs">32 Courses</p>
-                </div>
+                    <h4 class="mt-4 mb-2 font-medium">
+                        Python
+                    </h4>
+                    <p class="text-gray-500 text-xs">
+                        32 Courses
+                    </p>
+                </div> <!-- End Single Category Item -->
+
                 <div
-                    class="transition basis-[12.5%] bg-[#E4F4FB] mx-3 p-5 rounded cursor-pointer hover:opacity-75 group">
-                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-100">
-                        <img src="./images/icons/mongodb.png" alt="" class="w-16 h-16">
+                    class="transition basis-[12.5%] bg-[#FCF1EB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
+                        <img src="./images/icons/bootstrap.png" alt="" class="w-16 h-16">
                     </div>
-                    <h4 class="mt-4 mb-2 font-medium">MongoDB</h4>
-                    <p class="text-gray-500 text-xs">32 Courses</p>
-                </div>
+                    <h4 class="mt-4 mb-2 font-medium">
+                        MongoDB
+                    </h4>
+                    <p class="text-gray-500 text-xs">
+                        32 Courses
+                    </p>
+                </div> <!-- End Single Category Item -->
+
             </div>
         </div>
     </section>
     <!-- End Categories Section -->
 
-    <!-- Start popular courses Section -->
-    <section id="popular-course-area" class="mt-12 mb-12">
+    <!-- Start Popular Courses Section -->
+    <section id="courses" class="mt-12">
         <div class="container mx-auto">
-            <h2 class="font-medium my-5 text-left">Popular Courses</h2>
+            <h2 class="font-medium my-5">Popular Courses</h2>
+
             <div id="popular-course">
                 <div class="course-item group">
                     <div
@@ -228,10 +278,14 @@
                                     </span>
                                 </div>
                             </div>
+
                             <div class="mt-4 mb-4 text-xs">
-                                <h2 class="text-base mt-3 font-medium">Complete Python Bootcamp from Zero to hero in
-                                    Python</h2>
-                                <p class="text-gray-400 mt-2">32 Lesson</p>
+                                <h2 class="text-base mt-3 font-medium">
+                                    Complete Python Bootcamp from Zero to hero in Python
+                                </h2>
+                                <p class="text-gray-400 mt-2">
+                                    32 Lesson
+                                </p>
                                 <div class="flex mt-5 items-center">
                                     <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-0">
                                     <img src="./images/avatar2.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
@@ -246,9 +300,10 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                </div> <!-- Single Course -->
+                </div> <!-- Single Course Item -->
 
                 <div class="course-item group">
                     <div
@@ -267,10 +322,14 @@
                                     </span>
                                 </div>
                             </div>
+
                             <div class="mt-4 mb-4 text-xs">
-                                <h2 class="text-base mt-3 font-medium">Complete Python Bootcamp from Zero to hero in
-                                    Python</h2>
-                                <p class="text-gray-400 mt-2">32 Lesson</p>
+                                <h2 class="text-base mt-3 font-medium">
+                                    Complete Python Bootcamp from Zero to hero in Python
+                                </h2>
+                                <p class="text-gray-400 mt-2">
+                                    32 Lesson
+                                </p>
                                 <div class="flex mt-5 items-center">
                                     <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-0">
                                     <img src="./images/avatar2.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
@@ -285,9 +344,10 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                </div> <!-- Single Course -->
+                </div> <!-- Single Course Item -->
 
                 <div class="course-item group">
                     <div
@@ -306,10 +366,14 @@
                                     </span>
                                 </div>
                             </div>
+
                             <div class="mt-4 mb-4 text-xs">
-                                <h2 class="text-base mt-3 font-medium">Complete Python Bootcamp from Zero to hero in
-                                    Python</h2>
-                                <p class="text-gray-400 mt-2">32 Lesson</p>
+                                <h2 class="text-base mt-3 font-medium">
+                                    Complete Python Bootcamp from Zero to hero in Python
+                                </h2>
+                                <p class="text-gray-400 mt-2">
+                                    32 Lesson
+                                </p>
                                 <div class="flex mt-5 items-center">
                                     <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-0">
                                     <img src="./images/avatar2.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
@@ -324,9 +388,10 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                </div> <!-- Single Course -->
+                </div> <!-- Single Course Item -->
 
                 <div class="course-item group">
                     <div
@@ -345,10 +410,14 @@
                                     </span>
                                 </div>
                             </div>
+
                             <div class="mt-4 mb-4 text-xs">
-                                <h2 class="text-base mt-3 font-medium">Complete Python Bootcamp from Zero to hero in
-                                    Python</h2>
-                                <p class="text-gray-400 mt-2">32 Lesson</p>
+                                <h2 class="text-base mt-3 font-medium">
+                                    Complete Python Bootcamp from Zero to hero in Python
+                                </h2>
+                                <p class="text-gray-400 mt-2">
+                                    32 Lesson
+                                </p>
                                 <div class="flex mt-5 items-center">
                                     <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-0">
                                     <img src="./images/avatar2.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
@@ -363,9 +432,10 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                </div> <!-- Single Course -->
+                </div> <!-- Single Course Item -->
 
                 <div class="course-item group">
                     <div
@@ -384,10 +454,14 @@
                                     </span>
                                 </div>
                             </div>
+
                             <div class="mt-4 mb-4 text-xs">
-                                <h2 class="text-base mt-3 font-medium">Complete Python Bootcamp from Zero to hero in
-                                    Python</h2>
-                                <p class="text-gray-400 mt-2">32 Lesson</p>
+                                <h2 class="text-base mt-3 font-medium">
+                                    Complete Python Bootcamp from Zero to hero in Python
+                                </h2>
+                                <p class="text-gray-400 mt-2">
+                                    32 Lesson
+                                </p>
                                 <div class="flex mt-5 items-center">
                                     <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-0">
                                     <img src="./images/avatar2.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
@@ -402,14 +476,15 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                </div> <!-- Single Course -->
+                </div> <!-- Single Course Item -->
 
                 <div class="course-item group">
                     <div
                         class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
-                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-b-none">
+                        <img src="./images/course2.png" alt="" class="w-full rounded rounded-b-none">
                         <div class="mt-3 p-3">
                             <div class="flex justify-between">
                                 <div>
@@ -423,49 +498,14 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="mt-4 mb-4 text-xs">
-                                <h2 class="text-base mt-3 font-medium">Complete Python Bootcamp from Zero to hero in
-                                    Python</h2>
-                                <p class="text-gray-400 mt-2">32 Lesson</p>
-                                <div class="flex mt-5 items-center">
-                                    <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-0">
-                                    <img src="./images/avatar2.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
-                                    <img src="./images/avatar3.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
-                                    <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
-                                    <div
-                                        class="w-8 h-8 rounded-full bg-gray-100 z-10 text-gray-400 -ml-4 text-center pt-2">
-                                        +2
-                                    </div>
-                                    <div class="text-gray-400 ml-4">
-                                        Student apply
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- Single Course -->
 
-                <div class="course-item group">
-                    <div
-                        class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
-                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-b-none">
-                        <div class="mt-3 p-3">
-                            <div class="flex justify-between">
-                                <div>
-                                    <span class="bg-[#FFE7D2] text-[#FF8D3F] p-2 rounded text-[10px] font-bold">
-                                        Python
-                                    </span>
-                                </div>
-                                <div>
-                                    <span class="text-green-600 font-bold">
-                                        $2,000
-                                    </span>
-                                </div>
-                            </div>
                             <div class="mt-4 mb-4 text-xs">
-                                <h2 class="text-base mt-3 font-medium">Complete Python Bootcamp from Zero to hero in
-                                    Python</h2>
-                                <p class="text-gray-400 mt-2">32 Lesson</p>
+                                <h2 class="text-base mt-3 font-medium">
+                                    Complete Python Bootcamp from Zero to hero in Python
+                                </h2>
+                                <p class="text-gray-400 mt-2">
+                                    32 Lesson
+                                </p>
                                 <div class="flex mt-5 items-center">
                                     <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-0">
                                     <img src="./images/avatar2.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
@@ -480,18 +520,22 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                </div> <!-- Single Course -->
+                </div> <!-- Single Course Item -->
+
             </div>
         </div>
-    </section>
-    <!-- End popular courses Section -->
 
-    <!-- Start popular courses Section -->
-    <section id="popular-course-area" class="mt-12 mb-12">
+    </section>
+    <!-- End Popular Courses Section -->
+
+    <!-- Start New Courses Section -->
+    <section id="new-courses" class="mt-12">
         <div class="container mx-auto">
-            <h2 class="font-medium my-5 text-left">New Courses</h2>
+            <h2 class="font-medium my-5">New Courses</h2>
+
             <div id="new-course">
                 <div class="course-item group">
                     <div
@@ -510,10 +554,14 @@
                                     </span>
                                 </div>
                             </div>
+
                             <div class="mt-4 mb-4 text-xs">
-                                <h2 class="text-base mt-3 font-medium">Complete Python Bootcamp from Zero to hero in
-                                    Python</h2>
-                                <p class="text-gray-400 mt-2">32 Lesson</p>
+                                <h2 class="text-base mt-3 font-medium">
+                                    Complete Python Bootcamp from Zero to hero in Python
+                                </h2>
+                                <p class="text-gray-400 mt-2">
+                                    32 Lesson
+                                </p>
                                 <div class="flex mt-5 items-center">
                                     <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-0">
                                     <img src="./images/avatar2.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
@@ -528,9 +576,10 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                </div> <!-- Single Course -->
+                </div> <!-- Single Course Item -->
 
                 <div class="course-item group">
                     <div
@@ -549,10 +598,14 @@
                                     </span>
                                 </div>
                             </div>
+
                             <div class="mt-4 mb-4 text-xs">
-                                <h2 class="text-base mt-3 font-medium">Complete Python Bootcamp from Zero to hero in
-                                    Python</h2>
-                                <p class="text-gray-400 mt-2">32 Lesson</p>
+                                <h2 class="text-base mt-3 font-medium">
+                                    Complete Python Bootcamp from Zero to hero in Python
+                                </h2>
+                                <p class="text-gray-400 mt-2">
+                                    32 Lesson
+                                </p>
                                 <div class="flex mt-5 items-center">
                                     <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-0">
                                     <img src="./images/avatar2.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
@@ -567,9 +620,10 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                </div> <!-- Single Course -->
+                </div> <!-- Single Course Item -->
 
                 <div class="course-item group">
                     <div
@@ -588,10 +642,14 @@
                                     </span>
                                 </div>
                             </div>
+
                             <div class="mt-4 mb-4 text-xs">
-                                <h2 class="text-base mt-3 font-medium">Complete Python Bootcamp from Zero to hero in
-                                    Python</h2>
-                                <p class="text-gray-400 mt-2">32 Lesson</p>
+                                <h2 class="text-base mt-3 font-medium">
+                                    Complete Python Bootcamp from Zero to hero in Python
+                                </h2>
+                                <p class="text-gray-400 mt-2">
+                                    32 Lesson
+                                </p>
                                 <div class="flex mt-5 items-center">
                                     <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-0">
                                     <img src="./images/avatar2.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
@@ -606,9 +664,10 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                </div> <!-- Single Course -->
+                </div> <!-- Single Course Item -->
 
                 <div class="course-item group">
                     <div
@@ -627,10 +686,14 @@
                                     </span>
                                 </div>
                             </div>
+
                             <div class="mt-4 mb-4 text-xs">
-                                <h2 class="text-base mt-3 font-medium">Complete Python Bootcamp from Zero to hero in
-                                    Python</h2>
-                                <p class="text-gray-400 mt-2">32 Lesson</p>
+                                <h2 class="text-base mt-3 font-medium">
+                                    Complete Python Bootcamp from Zero to hero in Python
+                                </h2>
+                                <p class="text-gray-400 mt-2">
+                                    32 Lesson
+                                </p>
                                 <div class="flex mt-5 items-center">
                                     <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-0">
                                     <img src="./images/avatar2.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
@@ -645,9 +708,10 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                </div> <!-- Single Course -->
+                </div> <!-- Single Course Item -->
 
                 <div class="course-item group">
                     <div
@@ -666,10 +730,14 @@
                                     </span>
                                 </div>
                             </div>
+
                             <div class="mt-4 mb-4 text-xs">
-                                <h2 class="text-base mt-3 font-medium">Complete Python Bootcamp from Zero to hero in
-                                    Python</h2>
-                                <p class="text-gray-400 mt-2">32 Lesson</p>
+                                <h2 class="text-base mt-3 font-medium">
+                                    Complete Python Bootcamp from Zero to hero in Python
+                                </h2>
+                                <p class="text-gray-400 mt-2">
+                                    32 Lesson
+                                </p>
                                 <div class="flex mt-5 items-center">
                                     <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-0">
                                     <img src="./images/avatar2.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
@@ -684,14 +752,15 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                </div> <!-- Single Course -->
+                </div> <!-- Single Course Item -->
 
                 <div class="course-item group">
                     <div
                         class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
-                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-b-none">
+                        <img src="./images/course2.png" alt="" class="w-full rounded rounded-b-none">
                         <div class="mt-3 p-3">
                             <div class="flex justify-between">
                                 <div>
@@ -705,49 +774,14 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="mt-4 mb-4 text-xs">
-                                <h2 class="text-base mt-3 font-medium">Complete Python Bootcamp from Zero to hero in
-                                    Python</h2>
-                                <p class="text-gray-400 mt-2">32 Lesson</p>
-                                <div class="flex mt-5 items-center">
-                                    <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-0">
-                                    <img src="./images/avatar2.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
-                                    <img src="./images/avatar3.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
-                                    <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
-                                    <div
-                                        class="w-8 h-8 rounded-full bg-gray-100 z-10 text-gray-400 -ml-4 text-center pt-2">
-                                        +2
-                                    </div>
-                                    <div class="text-gray-400 ml-4">
-                                        Student apply
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- Single Course -->
 
-                <div class="course-item group">
-                    <div
-                        class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
-                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-b-none">
-                        <div class="mt-3 p-3">
-                            <div class="flex justify-between">
-                                <div>
-                                    <span class="bg-[#FFE7D2] text-[#FF8D3F] p-2 rounded text-[10px] font-bold">
-                                        Python
-                                    </span>
-                                </div>
-                                <div>
-                                    <span class="text-green-600 font-bold">
-                                        $2,000
-                                    </span>
-                                </div>
-                            </div>
                             <div class="mt-4 mb-4 text-xs">
-                                <h2 class="text-base mt-3 font-medium">Complete Python Bootcamp from Zero to hero in
-                                    Python</h2>
-                                <p class="text-gray-400 mt-2">32 Lesson</p>
+                                <h2 class="text-base mt-3 font-medium">
+                                    Complete Python Bootcamp from Zero to hero in Python
+                                </h2>
+                                <p class="text-gray-400 mt-2">
+                                    32 Lesson
+                                </p>
                                 <div class="flex mt-5 items-center">
                                     <img src="./images/avatar1.png" alt="" class="w-8 h-8 rounded-full z-0">
                                     <img src="./images/avatar2.png" alt="" class="w-8 h-8 rounded-full z-10 -ml-4">
@@ -762,166 +796,164 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                </div> <!-- Single Course -->
+                </div> <!-- Single Course Item -->
+
             </div>
         </div>
-    </section>
-    <!-- End popular courses Section -->
 
-    <!-- Start Footer -->
+    </section>
+    <!-- End New Courses Section -->
+
+    <!-- Start Footer Section -->
     <footer class="bg-[#00103F] text-white">
-        <div class="container mx-auto flex p-5 py-16">
-            <div class="basis-2/6">
-                <div class="p-5">
-                    <img src="./images/logo-mini.png" alt="" class="w-10">
-                    <div>
-                        <h3 class="font-medium mb-3 mt-4">Call Us</h3>
-                        <div class="text-sm">
-                            <h4 class="mb-2">6600009239230</h4>
-                            <h4 class="mb-2">hello@gmail.com</h4>
-                            <h4 class="mb-2">9AM - 5PM, Monday - Friday</h4>
-                            <h4 class="mb-2">
-                                PO Box 567, Hostain st. 433 Los Angeles, California, US
-                            </h4>
+        <div class="container mx-auto px-5 py-16">
+            <div class="flex">
+                <div class="basis-2/6">
+                    <div class="p-5">
+                        <img src="./images/logo-mini.png" alt="" class="w-10">
+                        <div>
+                            <h3 class="font-medium mt-4 mb-3">
+                                Call Us
+                            </h3>
+                            <div class="text-sm">
+                                <h4 class="mb-2">+88019626352323</h4>
+                                <h4 class="mb-2">hello@gmail.com</h4>
+                                <h4 class="mb-2">9AM- 5PM, Monday - Friday</h4>
+                                <h4 class="mb-2">PO Box 567, Hostain st. 433 Los Angeles, California, US</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="basis-1/6">
-                <div class="p-4">
-                    <h3 class="font-medium mb-3 mt-4">Links</h3>
-                    <ul class="list-none mt-4">
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                Start here
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                Blogs
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                Contact Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                Career
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                Courses
-                            </a>
-                        </li>
-                    </ul>
+                <div class="basis-1/6">
+                    <div class="p-4">
+                        <h3 class="font-medium mt-4 mb-3">
+                            Links
+                        </h3>
+                        <ul class="list-none mt-4">
+                            <li>
+                                <a href="#" class="text-sm">
+                                    <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
+                                    Start here
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">
+                                    <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
+                                    Blogs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">
+                                    <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
+                                    About us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">
+                                    <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">
+                                    <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
+                                    Career
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">
+                                    <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
+                                    Courses
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="basis-1/6">
+                    <div class="p-4">
+                        <h3 class="font-medium mt-4 mb-3">
+                            Information
+                        </h3>
+                        <ul class="list-none mt-4">
+                            <li>
+                                <a href="#" class="text-sm">
+                                    <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
+                                    Start here
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">
+                                    <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
+                                    Blogs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">
+                                    <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
+                                    About us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">
+                                    <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">
+                                    <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
+                                    Career
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">
+                                    <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
+                                    Courses
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="basis-2/6">
+                    <div class="p-4">
+                        <h3 class="font-medium mt-4 mb-3">
+                            Sign up for our newsletter
+                        </h3>
+                        <p class="text-sm">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut odit magnam officia sequi
+                            aliquid
+                            facere corporis dolorem beatae? Dolore pariatur illo odio nulla atque quibusdam dicta ut
+                            tempore, suscipit est.
+                        </p>
+                        <p class="mt-4 relative">
+                            <input type="email" placeholder="Your e-mail"
+                                class="w-full p-3 pl-5 bg-white rounded-full text-gray-700 placeholder:text-gray-700">
+                            <span class="absolute top-1 right-2 bg-red-600 px-5 p-2 rounded-full uppercase">
+                                Subscribe
+                            </span>
+                        </p>
+                    </div>
+
                 </div>
             </div>
-
-            <div class="basis-1/6">
-                <div class="p-4">
-                    <h3 class="font-medium mb-3 mt-4">Information</h3>
-                    <ul class="list-none mt-4">
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                Start here
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                Blogs
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                Contact Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                Career
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                Courses
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                Contact Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                Career
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-sm">
-                                <i class="fa-solid fa-chevron-right text-xs mr-3"></i>
-                                Courses
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="text-center mt-4">
+                &copy; 2022 All rights reserved.
             </div>
-
-            <div class="basis-2/6">
-                <div class="p-4">
-                    <h3 class="font-medium mb-3 mt-4">
-                        Sign up for our newsletter
-                    </h3>
-                    <p class="text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi recusandae dolore voluptate
-                        aliquid corporis, dolorum assumenda fugiat repudiandae culpa ducimus eveniet, harum magni
-                        perspiciatis alias voluptatem soluta iure blanditiis deleniti.
-                    </p>
-                    <p class="mt-4 relative">
-                        <input type="email"
-                            class="w-full rounded-full p-3 pl-5 bg-white text-gray-700 placeholder:text-gray-700"
-                            placeholder="Your e-mail">
-                        <span class="absolute top-[4px] right-2 bg-red-600 px-5 p-2 rounded-full uppercase">
-                            Subscribe
-                        </span>
-                    </p>
-                </div>
-            </div>
-
         </div>
     </footer>
-    <!-- End Footer -->
+    <!-- End Footer Section -->
 
-    <script src="./js/jquery.min.js"></script>
+    <!-- Scripts -->
+    <!-- Jquery JS -->
+    <script src="./vendors/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Carousel JS -->
     <script src="./vendors/slick/slick.min.js"></script>
+
+    <!-- Main JS -->
     <script src="./js/main.js"></script>
 </body>
 
