@@ -20,7 +20,14 @@ https://maniruzzamanakash.github.io/tailwindcss-website/public/
 
 #### Mobile Responsive Design
 
+##### Homepage in mobile view
 ![Mobile Responsive page](https://i.ibb.co/T8Th5Tn/Online-Learning-platform-mobile-responsive.png "Mobile Responsive page")
+
+##### Course section in mobile view
+![Course section in mobile view](https://i.ibb.co/5Y29nc8/Course-in-Mobile-view.png "Course section in mobile view")
+
+##### Navbar in mobile view
+![Navbar view in mobile view](https://i.ibb.co/j5bzvgC/Mobile-View-navbar.png "Navbar view in mobile view")
 
 ## How to start
 ```sh
