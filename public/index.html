@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-poppins text-gray-800">
+<body class="font-poppins text-gray-800 overflow-x-hidden" id="top">
     <!-- Start Navbar -->
     <nav class="bg-white shadow p-2.5 sticky top-0 z-50">
         <div class="container mx-auto">
@@ -34,10 +34,29 @@
                             <img src="./images/logo.png" alt="" class="w-36">
                         </a>
                     </div>
-                    <div class="ml-8">
+                    <div class="hidden md:block ml-8 group relative">
                         <img src="./images/icons/category-icon.svg" alt="" class="w-8 h-8 cursor-pointer">
+                        <div class="bg-white hidden absolute group-hover:block min-w-[200px]">
+                            <ul class="list-none">
+                                <li>
+                                    <a href="#" class="block bg-white hover:bg-slate-50 py-4 px-8 hover:text-red-500">
+                                        HTML
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block bg-white hover:bg-slate-50 py-4 px-8 hover:text-red-500">
+                                        CSS
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block bg-white hover:bg-slate-50 py-4 px-8 hover:text-red-500">
+                                        Bootstrap
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="ml-16 relative">
+                    <div class="hidden md:block ml-16 relative">
                         <span class="absolute top-2.5 left-4">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
@@ -46,9 +65,9 @@
                             placeholder="Search for Tuts, Videos, Tutors etc..">
                     </div>
                 </div>
-                <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center pr-4 md:pr-0">
                     <ul class="list-none">
-                        <li class="inline-block mx-6 relative group">
+                        <li class="inline-block mx-3 sm:mx-4 md:mx-6 relative group">
                             <a href="#" class="text-xl text-gray-500 group-hover:opacity-75">
                                 <span
                                     class="absolute -top-2 bg-red-500 -right-3.5 text-white pl-1.5 text-sm rounded-full h-5 w-5">
@@ -57,7 +76,7 @@
                                 <i class="fa-solid fa-cart-arrow-down"></i>
                             </a>
                         </li>
-                        <li class="inline-block mx-6 relative group">
+                        <li class="inline-block mx-3 sm:mx-4 md:mx-6 relative group">
                             <a href="#" class="text-xl text-gray-500 group-hover:opacity-75">
                                 <span
                                     class="absolute -top-2 bg-red-500 -right-3.5 text-white pl-1.5 text-sm rounded-full h-5 w-5">
@@ -65,8 +84,40 @@
                                 </span>
                                 <i class="fa-solid fa-envelope"></i>
                             </a>
+                            <div class="hidden group-hover:block absolute shadow w-64 p-4 bg-white">
+                                <div class="flex p-2 border-b border-slate-200">
+                                    <div class="mr-2">
+                                        <i class="fa-solid fa-user-circle text-lg p-2"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-gray-500 font-normal">Maniruzzaman Akash</h3>
+                                        <p class="text-gray-400 text-xs font-thin">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                        </p>
+                                        <p class="text-gray-400 font-thin text-[10px] mt-2">
+                                            2 min ago
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex p-2">
+                                    <div class="mr-2">
+                                        <i class="fa-solid fa-user-circle text-lg p-2"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-gray-500 font-normal">Maniruzzaman Akash</h3>
+                                        <p class="text-gray-400 text-xs font-thin">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                        </p>
+                                        <p class="text-gray-400 font-thin text-[10px] mt-2">
+                                            2 min ago
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="inline-block mx-6 relative group">
+                        <li class="inline-block mx-3 sm:mx-4 md:mx-6 relative group">
                             <a href="#" class="text-xl text-gray-500 group-hover:opacity-75">
                                 <span
                                     class="absolute -top-2 bg-red-500 -right-3.5 text-white pl-1.5 text-sm rounded-full h-5 w-5">
@@ -76,7 +127,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="-mt-3 mx-3 group">
+                    <div class="hidden md:block -mt-3 mx-3 group">
                         <a href="#"
                             class="text-xl text-gray-500 group-hover:opacity-75 rounded-full h-5 w-5 shadow py-1.5 px-2.5">
                             <i class="fa-solid fa-user"></i>
@@ -84,17 +135,66 @@
                     </div>
                 </div>
             </div>
+
+            <div class="absolute top-1 right-4 cursor-pointer mt-5">
+                <span class="md:hidden navbar-toggle text-slate-900">
+                    <i class="fa-solid fa-bars-staggered" id="toggle-icon"></i>
+                </span>
+            </div>
+        </div>
+        <div class="mobile-navbar hidden h-[102vh] bg-white absolute top-0 left-0 text-left shadow overflow-y">
+            <div class="text-center pt-2 flex items-center mt-3">
+                <a href="index.html" class="m-0 mx-auto">
+                    <img src="./images/logo.png" alt="" class="w-36">
+                </a>
+            </div>
+            <div class="p-3">
+                <div class="relative">
+                    <span class="absolute top-2.5 left-4">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="search"
+                        class="transition w-full text-xs rounded-md p-3 pl-12 bg-slate-100 outline-none outline-1 focus:outline-red-300"
+                        placeholder="Search for Tuts, Videos, Tutors etc..">
+                </div>
+                <ul class="mt-3 list-none">
+                    <li class="py-3">
+                        <i class="fa-solid fa-cube text-gray-400 mr-2"></i>
+                        Categories
+                    </li>
+                    <li class="transition p-3 cursor-pointer hover:bg-slate-100 mb-1 hover:opacity-80 border-b border-slate-100">
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-right text-xs mr-4"></i> HTML
+                        </a>
+                    </li>
+                    <li class="transition p-3 cursor-pointer hover:bg-slate-100 mb-1 hover:opacity-80 border-b border-slate-100">
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-right text-xs mr-4"></i> CSS
+                        </a>
+                    </li>
+                    <li class="transition p-3 cursor-pointer hover:bg-slate-100 mb-1 hover:opacity-80 border-b border-slate-100">
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-right text-xs mr-4"></i> Tailwind CSS
+                        </a>
+                    </li>
+                    <li class="transition p-3 cursor-pointer hover:bg-slate-100 mb-1 hover:opacity-80 border-b border-slate-100">
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-right text-xs mr-4"></i> Bootstrap CSS
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- End Navbar -->
 
     <!-- Start Header / Hero Section -->
-    <header class="bg-[#DEF6FD] mt-2 rounded-md">
-        <div class="container mx-auto py-40 bg-hero bg-contain bg-no-repeat bg-[right_0px_top_10px]">
-            <h2 class="text-4xl mb-1">
+    <header class="bg-[#DEF6FD] mt-0 md:mt-2 rounded-md text-center md:text-left">
+        <div class="container mx-auto py-10 md:py-40 md:bg-hero bg-contain bg-no-repeat bg-[right_0px_top_10px]">
+            <h2 class="text-4xl mb-1 pb-3 md:pb-0">
                 Find a perfect
             </h2>
-            <h2 class="font-semibold text-4xl">
+            <h2 class="font-semibold text-4xl pb-3 md:pb-0">
                 Online Course
             </h2>
             <p class="text-gray-500 my-3">
@@ -103,25 +203,25 @@
 
             <form action="" method="get" class="mt-4">
                 <div class="flex bg-white items-center p-4">
-                    <div class="basis-3/6 relative">
+                    <div class="basis-1/3 md:basis-3/6 relative">
                         <span class="absolute top-0.5 left-4">
                             <i class="fa-solid fa-search text-slate-300"></i>
                         </span>
-                        <input type="search" class="ml-16 outline-none focus:outline-none font-thin"
+                        <input type="search" class="pl-12 md:pl-16 pr-2 w-full outline-none focus:outline-none font-thin"
                             placeholder="Search online courses">
                     </div>
-                    <div class="basis-2/6 flex">
+                    <div class="basis-1/3 md:basis-2/6 flex">
                         <div>
                             <i class="fa-solid fa-cube text-gray-400 mr-2"></i>
                         </div>
                         <div class="flex-1">
                             <select name="category" id="category_id" class="bg-white text-gray-400 font-thin w-full">
-                                <option value="">Select Technology</option>
+                                <option value="">Category</option>
                                 <option value="">Bootstrap</option>
                             </select>
                         </div>
                     </div>
-                    <div class="basis-1/6">
+                    <div class="basis-1/3 md:basis-1/6">
                         <button
                             class="transition bg-red-500 text-white px-8 hover:opacity-75 rounded-full p-3 w-full ml-3">
                             Search
@@ -145,9 +245,9 @@
         <div class="container mx-auto">
             <h2 class="font-medium my-5">Browse Categories</h2>
 
-            <div class="flex flex-row gap-2 items-center text-center">
+            <div class="flex flex-row gap-2 items-center text-center flex-wrap pl-4 md:pl-0">
                 <div
-                    class="transition basis-[12.5%] bg-[#FCF1EB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    class="transition basis-[45%] md:basis-[10.93%] bg-[#FCF1EB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group hover:-translate-y-2">
                     <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
                         <img src="./images/icons/bootstrap.png" alt="" class="w-16 h-16">
                     </div>
@@ -160,7 +260,7 @@
                 </div> <!-- End Single Category Item -->
 
                 <div
-                    class="transition basis-[12.5%] bg-[#FEF9EC] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    class="transition basis-[45%] md:basis-[10.93%] bg-[#FEF9EC] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group hover:-translate-y-2">
                     <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
                         <img src="./images/icons/html.png" alt="" class="w-16 h-16">
                     </div>
@@ -173,7 +273,7 @@
                 </div> <!-- End Single Category Item -->
 
                 <div
-                    class="transition basis-[12.5%] bg-[#E4F4FB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    class="transition basis-[45%] md:basis-[10.93%] bg-[#E4F4FB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group hover:-translate-y-2">
                     <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
                         <img src="./images/icons/jquery.png" alt="" class="w-16 h-16">
                     </div>
@@ -186,7 +286,7 @@
                 </div> <!-- End Single Category Item -->
 
                 <div
-                    class="transition basis-[12.5%] bg-[#E4F4FB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    class="transition basis-[45%] md:basis-[10.93%] bg-[#E4F4FB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group hover:-translate-y-2">
                     <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
                         <img src="./images/icons/sass.png" alt="" class="w-16 h-16">
                     </div>
@@ -199,7 +299,7 @@
                 </div> <!-- End Single Category Item -->
 
                 <div
-                    class="transition basis-[12.5%] bg-[#FCF1EB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    class="transition basis-[45%] md:basis-[10.93%] bg-[#FCF1EB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group hover:-translate-y-2">
                     <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
                         <img src="./images/icons/react.png" alt="" class="w-16 h-16">
                     </div>
@@ -212,7 +312,7 @@
                 </div> <!-- End Single Category Item -->
 
                 <div
-                    class="transition basis-[12.5%] bg-[#FEF9EC] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    class="transition basis-[45%] md:basis-[10.93%] bg-[#FEF9EC] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group hover:-translate-y-2">
                     <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
                         <img src="./images/icons/java.png" alt="" class="w-16 h-16">
                     </div>
@@ -225,7 +325,7 @@
                 </div> <!-- End Single Category Item -->
 
                 <div
-                    class="transition basis-[12.5%] bg-[#E4F4FB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    class="transition basis-[45%] md:basis-[10.93%] bg-[#E4F4FB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group hover:-translate-y-2">
                     <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
                         <img src="./images/icons/python.png" alt="" class="w-16 h-16">
                     </div>
@@ -238,9 +338,9 @@
                 </div> <!-- End Single Category Item -->
 
                 <div
-                    class="transition basis-[12.5%] bg-[#FCF1EB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group">
+                    class="transition basis-[45%] md:basis-[10.93%] bg-[#FCF1EB] cursor-pointer rounded mr-3 p-5 hover:opacity-75 group hover:-translate-y-2">
                     <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
-                        <img src="./images/icons/bootstrap.png" alt="" class="w-16 h-16">
+                        <img src="./images/icons/mongodb.png" alt="" class="w-16 h-16">
                     </div>
                     <h4 class="mt-4 mb-2 font-medium">
                         MongoDB
@@ -808,9 +908,9 @@
     <!-- End New Courses Section -->
 
     <!-- Start Footer Section -->
-    <footer class="bg-[#00103F] text-white">
+    <footer class="bg-[#00103F] text-white mt-20">
         <div class="container mx-auto px-5 py-16">
-            <div class="flex">
+            <div class="flex flex-col md:flex-row">
                 <div class="basis-2/6">
                     <div class="p-5">
                         <img src="./images/logo-mini.png" alt="" class="w-10">
@@ -941,6 +1041,12 @@
             </div>
             <div class="text-center mt-4">
                 &copy; 2022 All rights reserved.
+            </div>
+
+            <div>
+                <a id="scroll-to-top" href="#top" class="transition hidden shadow bottom-1 right-1 w-14 h-14 rounded-[50%] bg-red-600 hover:opacity-80 z-50 border group">
+                    <i class="fa-solid fa-arrow-up transition pt-5 pl-5 text-white group-hover:-translate-y-2"></i>
+                </a>
             </div>
         </div>
     </footer>
