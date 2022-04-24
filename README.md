@@ -3,8 +3,6 @@ An online learning platform website design using Tailwind CSS v3 with little bit
 
 ---
 
-Note: ```Development is ongoing```
-
 ## Live Demo -
 https://maniruzzamanakash.github.io/devshunt-tailwindv3/public
 
@@ -19,6 +17,10 @@ https://maniruzzamanakash.github.io/devshunt-tailwindv3/public
 #### Home Page
 
 ![HomePage Demo](https://i.ibb.co/FXGGZyH/Devs-Hunt-tailwind-project.png "HomePage Demo")
+
+#### Mobile Responsive Design
+
+![Mobile Responsive page](https://i.ibb.co/T8Th5Tn/Online-Learning-platform-mobile-responsive.png "Mobile Responsive page")
 
 ## How to start
 ```sh
