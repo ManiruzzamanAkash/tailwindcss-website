@@ -4,7 +4,7 @@ An online learning platform website design using Tailwind CSS v3 with little bit
 ---
 
 ## Live Demo -
-https://maniruzzamanakash.github.io/devshunt-tailwindv3/public
+https://maniruzzamanakash.github.io/tailwindcss-website/public/
 
 ## Requirements
 1. HTML 5
